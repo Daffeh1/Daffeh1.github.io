@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>https://www.gamtech.fi</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="images-favicon.png">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+</head>
+<body>
+
+    <div class="logo">
+       <img src="images-logo.jpg" alt="GamTech Solutions Logo">
+
+    </div>
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>GamTech<br>Solutions</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Showcase</a> 
+    <a href="#about-us" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About us</a> 
+    <a href="#our-services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Our Services</a> 
+    <a href="#partners" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Partners</a> 
+    <a href="#contact-us" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact Us</a>
+  </div>
+</nav>
+
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>GamTech Solutions Name</span>
+</header>
+
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>Building a Sustainable Future with Technology</b></h1>
+    <p>Your partner in eco-friendly tech solutions.</p>
+    <h1 class="w3-xxxlarge w3-text-red"><b>Showcase.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+  </div>
+  
+  
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="images-electric-car.jpg" style="width:100%" onclick="onClick(this)" alt="Solar power charging hub">
+      <img src="images-home.jpg" style="width:100%" onclick="onClick(this)" alt="Solar panel homes">
+      <img src="images-solar-cells.jpg" style="width:100%" onclick="onClick(this)" alt="Solar panel light">
+    </div>
+
+    <div class="w3-half">
+      <img src="images-windmill-landscape.jpg" style="width:100%" onclick="onClick(this)" alt="Electricity ecologically">
+      <img src="images-solar-panel.jpg" style="width:100%" onclick="onClick(this)" alt="Solar power hut">
+      <img src="images-solar-panel-lights.jpg" style="width:100%" onclick="onClick(this)" alt="Solar power streetlights">
+    </div>
+  </div>
+
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+        <img id="img01" class="w3-image" src="img01" alt="GamTech logo">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <div class="w3-container" id="about-us" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>About Us.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>We are committed to providing innovative, eco-friendly technology solutions for a sustainable future. Our team of experts works tirelessly to create cutting-edge products that help businesses reduce their carbon footprint and improve their sustainability efforts.</p>
+  </div>
+  
+  <div class="w3-container" id="our-services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Our Services.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>We provide a range of eco-friendly technology solutions designed to help your business thrive sustainably.</p>
+    <p><b>Renewable Energy Systems</b>:</p>
+    <p>We design and install solar and wind energy systems for businesses looking to reduce their energy costs and carbon footprint.</p>
+
+    <p><b>Smart Building Solutions</b>:</p>
+    <p>Our smart building technology integrates energy-efficient systems that optimize heating, cooling, lighting, and security.</p>
+
+    <p><b>Consulting & Sustainability Audits</b>:</p>
+    <p>We offer sustainability consulting services to help your company assess its environmental impact and implement greener practices.</p>
+  </div>
+
+
+  <div class="w3-container" id="partners" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Partners.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>We collaborate with leading companies to bring the best sustainable technology solutions to the market.</p>
+    <div class="partner-website"><p class="w3-center">
+        <a href="https://www.laurea.fi" target="_blank"><img src="images-laurea-logo.png" alt="Laurea"></a>
+      <a href="https://laureamko.fi" target="_blank"><img src="images-laureamko-logo.png" alt="Laureamko"></a>
+      <a href="https://slice.fi" target="_blank"><img src="images-slice-logo.png" alt="Slice"></a>
+</div>
+
+  
+  <div class="w3-container" id="contact-us" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Contact Us.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Fill out the form and fill me in with the details :) We love meeting new people!</p>
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Send Message</button>
+    </form>  
+  </div>
+
+
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-center">
+  <a href="https://facebook.com" target="_blank"><img src="images/facebook-icon.png" alt="Facebook"></a>
+  <a href="https://twitter.com" target="_blank"><img src="images/twitter-icon.png" alt="Twitter"></a>
+  <a href="https://linkedin.com" target="_blank"><img src="images/linkedin-icon.png" alt="LinkedIn"></a>
+  </div>
+
+  <footer>
+    <p class="w3-center">&copy;2024 GamTech Solutions. All Rights Reserved.</p>
+
+</footer>
+  </div>
+
+<script>
+
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+</div>
+</body>
+</html>
